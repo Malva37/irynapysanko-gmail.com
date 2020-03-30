@@ -1,70 +1,176 @@
-@font-face {
-    src: url(fonts/MyriadProRegular.ttf);
-    font-family: MyriadPro;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-header {
-    width: 1920px;
-    height: 100px;
-    background-color: #ffffff;
-    display: flex;
+body * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-.logo {
-    height: 30px;
-    width: 100px;
-    background: url(images/logo.jpg);
-    margin: 40px 520px 40px 355px;
-}
-
-.menu {
-    display: flex;
-    width: 575px;
-    margin: 28px 370px 28px 0;
-
-}
-
-.menu-link {
-    font-family: MyriadPro;
-    font-size: 15px;
-    margin-right: 47px;
-    text-decoration: none;
-    color: #3f4244;
-    height: 43px;
-    padding: 0 30px;
-    text-align: center;
-    line-height: 43px;
-}
-
-.menu-link:hover {
-    background: linear-gradient(#66f8c7, #4ee0cb);
-    border-radius: 5%;
-    color: white;
-}
-.hero{
-    height: 700px;
-    width: 1920px;
-    background: linear-gradient(#66f8c7, #4ee0cb);
-    padding: 250px 0;
+.container {
+    max-width: 1170px;
     margin: 0 auto;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 38px 0;
+}
+
+.main_menu {
+    max-width: 550px;
+    flex-grow: 1;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.header ul li a {
+    color: #3f4244;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 18px 26px 16px 32px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.header ul li a:hover {
+    color: #ffffff;
+    transition: .5s;
+    background-image: linear-gradient(to bottom, #6dffc6 1%, #3fd2ce 99%);
+}
+
+
+/* header  */
+
+.main {
+    background-image: linear-gradient(to bottom, #6dffc6 1%, #3fd2ce 99%);
+    padding: 270px 0 250px 0;
+}
+
+.main .main_title {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 300;
+    padding-bottom: 53px;
+    text-align: center;
+}
+
+.main .show_then {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to bottom, #ff6c54 1%, #ff2b59 99%);
+    padding: 30px 60px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.main .show_then:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+
+/* main  */
+
+
+.services .container {
+    align-items: center;
+    padding: 80px 0;
 
 }
-.textHero{
-    font-size: 60px;
-    width: 620px;
-    color: white;
-    margin: 20px 650px 40px;
-    left: 652px;
+.menuServices{
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom:90px; */
+    flex-wrap: wrap;
+
 }
-.btnShowMe{
-    color: linear-gradient(#ff3958 #ff6c54);
-    background-image: linear-gradient(to top, #ff3958 0%, #ff6c54 51%);
-    border-radius: 3%;
-    width: 250px;
-    height: 70px;
-    margin: 0 830px;
-    line-height: 70px;
+.service {
+text-align: center;
+width: 20%;
+margin-bottom: 10%;
+
+}
+
+
+.sectionTitle {
     font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(63, 66, 68);
+    /* line-height: 1.2; */
+    margin: 25px 0 45px;
+}
+
+.sectionText {
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(146, 155, 160);
+    /* line-height: 1.2; */
+    text-align: center;
+    width: 100%;
+    /* height: 43.875px; */
+    word-wrap: break-word;
+}
+.needService{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+    margin: 0 auto;
     border: none;
-    color: white;
+    outline: none;
+    background-image: linear-gradient(to bottom, #ff6c54 1%, #ff2b59 99%);
+    padding: 30px 60px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.needService:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: .5s;
+}
+
+
+@media screen and (max-width:768px){
+    .container {
+        max-width: 768px;
+    }
+    /* .header ul li a{
+        padding: 7% 3%;
+    } */
+    .service {
+        width: 40%;
+        }
+    
+}
+@media screen and (max-width:420px){
+    .container {
+        max-width: 420px;
+    }
+ /* .service {
+    width: 40%;
+    } */
+
+
 }
