@@ -1,0 +1,70 @@
+@font-face {
+    src: url(fonts/MyriadProRegular.ttf);
+    font-family: MyriadPro;
+}
+
+header {
+    width: 1920px;
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.logo {
+    height: 30px;
+    width: 100px;
+    background: url(images/logo.jpg);
+    margin: 40px 520px 40px 355px;
+}
+
+.menu {
+    display: flex;
+    width: 575px;
+    margin: 28px 370px 28px 0;
+
+}
+
+.menu-link {
+    font-family: MyriadPro;
+    font-size: 15px;
+    margin-right: 47px;
+    text-decoration: none;
+    color: #3f4244;
+    height: 43px;
+    padding: 0 30px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.menu-link:hover {
+    background: linear-gradient(#66f8c7, #4ee0cb);
+    border-radius: 5%;
+    color: white;
+}
+.hero{
+    height: 700px;
+    width: 1920px;
+    background: linear-gradient(#66f8c7, #4ee0cb);
+    padding: 250px 0;
+    margin: 0 auto;
+
+}
+.textHero{
+    font-size: 60px;
+    width: 620px;
+    color: white;
+    margin: 20px 650px 40px;
+    left: 652px;
+}
+.btnShowMe{
+    color: linear-gradient(#ff3958 #ff6c54);
+    background-image: linear-gradient(to top, #ff3958 0%, #ff6c54 51%);
+    border-radius: 3%;
+    width: 250px;
+    height: 70px;
+    margin: 0 830px;
+    line-height: 70px;
+    font-size: 15px;
+    border: none;
+    color: white;
+}
