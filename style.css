@@ -18,7 +18,7 @@ body * {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 38px 0;
+    padding: 3%;
 }
 
 .main_menu {
@@ -41,7 +41,7 @@ body * {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
-    padding: 18px 26px 16px 32px;
+    padding: 18px 26px 16px;
     transition: .5s;
     border-radius: 5px;
 }
@@ -50,6 +50,10 @@ body * {
     color: #ffffff;
     transition: .5s;
     background-image: linear-gradient(to bottom, #6dffc6 1%, #3fd2ce 99%);
+}
+
+.main_menu_mobile {
+    display: none;
 }
 
 
@@ -70,7 +74,7 @@ body * {
 
 .main .show_then {
     color: #ffffff;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 15px;
     font-weight: 500;
     display: block;
@@ -98,17 +102,18 @@ body * {
     padding: 80px 0;
 
 }
-.menuServices{
+
+.menuServices {
     display: flex;
     justify-content: space-between;
-    /* padding-bottom:90px; */
     flex-wrap: wrap;
 
 }
+
 .service {
-text-align: center;
-width: 20%;
-margin-bottom: 10%;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 10%;
 
 }
 
@@ -117,7 +122,6 @@ margin-bottom: 10%;
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(63, 66, 68);
-    /* line-height: 1.2; */
     margin: 25px 0 45px;
 }
 
@@ -125,13 +129,12 @@ margin-bottom: 10%;
     font-size: 13px;
     font-family: "Roboto";
     color: rgb(146, 155, 160);
-    /* line-height: 1.2; */
     text-align: center;
     width: 100%;
-    /* height: 43.875px; */
     word-wrap: break-word;
 }
-.needService{
+
+.needService {
     color: #ffffff;
     font-family: 'Roboto';
     font-size: 15px;
@@ -145,6 +148,7 @@ margin-bottom: 10%;
     border-radius: 5px;
     transition: .5s;
 }
+
 .needService:hover {
     cursor: pointer;
     transform: scale(0.9);
@@ -152,25 +156,121 @@ margin-bottom: 10%;
 }
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .container {
         max-width: 768px;
     }
-    /* .header ul li a{
-        padding: 7% 3%;
-    } */
+
+    .header .container {
+        display: block;
+        padding: 5%;
+    }
+
+    .main_menu {
+        padding: 6% 0 0 0;
+        max-width: none;
+    }
+
+    .header ul li a {
+        padding: 10% 16%;
+    }
+
+    .main {
+        padding: 30% 15%;
+    }
+
     .service {
-        width: 40%;
-        }
-    
+        width: 45%;
+    }
+
+    .sectionTitle {
+        margin: 15px 0 25px;
+    }
+
+    .sectionText {
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
-@media screen and (max-width:420px){
+
+@media screen and (max-width:420px) {
     .container {
         max-width: 420px;
     }
- /* .service {
-    width: 40%;
-    } */
+
+    .header .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .show_then,
+    .needService {
+        padding: 15px 20px;
+    }
+
+    .main_menu {
+        display: none;
+    }
+
+    .main .main_title {
+        font-size: 40px;
+        padding-bottom: 10%;
+    }
 
 
+    .main_menu_mobile {
+        position: relative;
+        display: inline-block;
+        padding: 5% 0 0 0;
+    }
+
+    .dropbtn {
+        background-image: linear-gradient(to bottom, #6dffc6 1%, #3fd2ce 99%);
+        padding: 13px 40px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 100%;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background: linear-gradient(to bottom, #6dffc6 20%, #3fd2ce 80%);
+        color: white;
+        border-radius: 5px;
+    }
+
+    .main_menu_mobile:hover .dropdown-content {
+        display: block;
+    }
+
+    .service {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .sectionTitle {
+        margin: 15px 0;
+    }
+
+    .needService {
+        margin-top: 5%;
+
+    }
 }
+
+/* services  */
